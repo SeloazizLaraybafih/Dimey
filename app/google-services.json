@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568294490255",
+    "project_id": "dimey-eebe5",
+    "storage_bucket": "dimey-eebe5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568294490255:android:ed80317b5db1e8a3e7f0fa",
+        "android_client_info": {
+          "package_name": "com.seloaziz.dimey"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf_DcvoKzUW2gobPjTWrbIl4JZwhK61po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
