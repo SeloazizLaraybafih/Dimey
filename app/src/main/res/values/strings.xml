@@ -3,6 +3,13 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="auth_front_text">Look like you haven’t registered yet, or maybe you forgot to Login fam...</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginPass">Password</string>
+    <string name="loginTitle">Login Here</string>
+    <string name="login_btn">Login\n</string>
+    <string name="loginPreLink">Doesn\'t have an account?</string>
+    <string name="loginLink">Register here</string>
 </resources>

@@ -10,6 +10,8 @@
 
     <color name="auth_btn">#E5FEFF</color>
     <color name="auth_container">#4D92D3F5</color>
+    <color name="loginRegister_btn">#60EBEB</color>
+
 
 
 </resources>

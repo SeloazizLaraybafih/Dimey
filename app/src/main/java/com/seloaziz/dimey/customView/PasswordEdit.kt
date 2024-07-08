@@ -47,12 +47,15 @@ class PasswordEdit @JvmOverloads constructor(
                 }
             }
         })
+        val paddingStartEnd = resources.getDimensionPixelSize(R.dimen.email_edit_padding)
+        setPadding(paddingStartEnd, paddingTop, paddingStartEnd, paddingBottom)
+        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Input you're Password"
-        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
+        hint = "Input your Password"
+//        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }
 
     private fun showClearButton() {
