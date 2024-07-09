@@ -12,46 +12,31 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.content.ContextCompat
 import com.seloaziz.dimey.R
 
-class EmailEdit @JvmOverloads constructor(
+class NameEdit @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : AppCompatEditText(context, attrs), View.OnTouchListener {
 
     private var clearButtonImage: Drawable
-    private var background: Drawable? = null
-    private var textColors: Int = 0
 
     init {
         clearButtonImage = ContextCompat.getDrawable(context, R.drawable.ic_close) as Drawable
-        background = ContextCompat.getDrawable(context, R.drawable.edt_bg)
-        textColors = ContextCompat.getColor(context, R.color.white)
-
-
-
         setOnTouchListener(this)
-
 
         addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
-
+                // Do nothing.
             }
+
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+                if (s.toString().isNotEmpty()) showClearButton() else hideClearButton()
 
             }
 
             override fun afterTextChanged(s: Editable) {
-                val email = s.toString()
-
-                if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-
-                    setTextColor(ContextCompat.getColor(context, R.color.blue))
-                } else {
-
-                    setTextColor(ContextCompat.getColor(context, R.color.red))
-                    setError("Email  invalid", null)
-
-                }
+                if (s.toString().isEmpty()) setError("Name is required", null)
             }
         })
+
         val paddingStartEnd = resources.getDimensionPixelSize(R.dimen.email_edit_padding)
         setPadding(paddingStartEnd, paddingTop, paddingStartEnd, paddingBottom)
         textAlignment = View.TEXT_ALIGNMENT_VIEW_START
@@ -59,8 +44,7 @@ class EmailEdit @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = "Input your Email"
-//        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
+        hint = "Input your Name"
     }
 
     private fun showClearButton() {
@@ -74,8 +58,6 @@ class EmailEdit @JvmOverloads constructor(
     private fun setButtonDrawables(startOfTheText: Drawable? = null, topOfTheText: Drawable? = null, endOfTheText: Drawable? = null, bottomOfTheText: Drawable? = null){
         setCompoundDrawablesWithIntrinsicBounds(startOfTheText, topOfTheText, endOfTheText, bottomOfTheText)
     }
-
-
 
     override fun onTouch(v: View?, event: MotionEvent): Boolean {
         if (compoundDrawables[2] != null) {

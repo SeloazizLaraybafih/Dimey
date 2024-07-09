@@ -34,7 +34,7 @@
             android:id="@+id/loginEmail_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/loginEmail"
+            android:text="@string/Email"
             app:layout_constraintBottom_toTopOf="@+id/loginEmail_edt"
             app:layout_constraintEnd_toEndOf="@+id/loginEmail_edt"
             app:layout_constraintHorizontal_bias="0.0"
@@ -42,10 +42,10 @@
 
         <com.seloaziz.dimey.customView.EmailEdit
             android:id="@+id/loginEmail_edt"
-            android:layout_width="218dp"
+            android:layout_width="250dp"
             android:layout_height="48dp"
             android:layout_marginTop="44dp"
-            android:background="@drawable/inner_layout_bg"
+            android:background="@drawable/edt_bg"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.505"
@@ -57,7 +57,7 @@
             android:id="@+id/loginPass_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/loginPass"
+            android:text="@string/Pass"
             app:layout_constraintBottom_toTopOf="@+id/loginPass_edt"
             app:layout_constraintEnd_toEndOf="@+id/loginPass_edt"
             app:layout_constraintHorizontal_bias="0.0"
@@ -65,10 +65,10 @@
 
         <com.seloaziz.dimey.customView.PasswordEdit
             android:id="@+id/loginPass_edt"
-            android:layout_width="218dp"
+            android:layout_width="250dp"
             android:layout_height="48dp"
             android:layout_marginTop="28dp"
-            android:background="@drawable/inner_layout_bg"
+            android:background="@drawable/edt_bg"
             android:inputType="textEmailAddress"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
@@ -144,38 +144,5 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
-    <!--    <View-->
-    <!--        android:id="@+id/login_view_bg"-->
-    <!--        android:layout_width="313dp"-->
-    <!--        android:layout_height="314dp"-->
-    <!--        android:background="@color/auth_container"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.398">-->
-
-    <!--    </View>-->
-
-
-
-
-
-    <!--    <androidx.constraintlayout.widget.Guideline-->
-    <!--        android:id="@+id/guideline"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        app:layout_constraintGuide_begin="421dp" />-->
-
-    <!--    <androidx.constraintlayout.widget.Guideline-->
-    <!--        android:id="@+id/guideline2"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="vertical"-->
-    <!--        app:layout_constraintGuide_begin="237dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

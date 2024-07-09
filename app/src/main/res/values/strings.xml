@@ -6,10 +6,16 @@
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="loginEmail">Email</string>
-    <string name="loginPass">Password</string>
+    <string name="Email">Email</string>
+    <string name="Pass">Password</string>
     <string name="loginTitle">Login Here</string>
     <string name="login_btn">Login\n</string>
     <string name="loginPreLink">Doesn\'t have an account?</string>
     <string name="loginLink">Register here</string>
+
+    <string name="register_btn">Register</string>
+    <string name="registerPreLink">Already have an account?</string>
+    <string name="registerLink">Login here</string>
+    <string name="registerTitle">Register Now</string>
+    <string name="name">Name</string>
 </resources>
